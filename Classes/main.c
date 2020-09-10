@@ -164,10 +164,28 @@ int main(int argc, char **argv) {
 		return 1;
 	}
 
+	// No argument flags (check for 2 files) // C.Lawson @ShortCipher
+	if (!original && !modified)
+	{
+		// printf("%d arguments\n", argc);
+		// printf("%s\n%s\n%s\n", argv[0], argv[1], argv[2]);
+
+		// Exactly 3 args (program, file1, file2)
+		if (argc == 3)
+		{
+			original = argv[1];
+			originalIsSet = 1;
+
+			modified = argv[2];
+			modifiedIsSet = 1;
+		}
+	}
+
 	if (!original || !modified) {
 		fprintf(stderr, "No files to compare.\n");
 		return 1;
 	}
+
 	if (strcmp(original, modified) == 0) {
 		fprintf(stderr, "Same file.\n");
 		return 1;
