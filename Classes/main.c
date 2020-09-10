@@ -167,9 +167,6 @@ int main(int argc, char **argv) {
 	// No argument flags (check for 2 files) // C.Lawson @ShortCipher
 	if (!original && !modified)
 	{
-		// printf("%d arguments\n", argc);
-		// printf("%s\n%s\n%s\n", argv[0], argv[1], argv[2]);
-
 		// Exactly 3 args (program, file1, file2)
 		if (argc == 3)
 		{
