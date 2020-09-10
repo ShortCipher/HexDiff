@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
 	long length = 0;
 	char lengthIsSet = 0;
 */
-	lineLength = 16 / 2;
+	lineLength = 16;
 	char lineLengthIsSet = 0;
 	//flags
 	int invert_flag = 0;
