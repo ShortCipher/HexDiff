@@ -158,9 +158,16 @@ int main(int argc, char **argv) {
 	free(d_ranges);
 	d_ranges = T_ranges;
 
-
+	// Show help
 	if (help_flag) {
 		print_usage(argc, argv);
+		return 1;
+	}
+
+	// Not enough arguments
+	if (argc < 3)
+	{
+		fprintf(stderr, "Usage: %s -h for help.\n", argv[0]);
 		return 1;
 	}
 
