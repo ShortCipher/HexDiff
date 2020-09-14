@@ -3,7 +3,7 @@
 
 void print_usage(int argc, char **argv)
 {
-	fprintf(stdout, "*** HexDiff ***\n");
+	fprintf(stdout, "*** HexDiff v0.1.2 ***\n");
 	fprintf(stdout, "Usage: %s file1 file2 [options]\n", argv[0]);
 	fprintf(stdout, "Shows two columns of hexadecimal values of two different files.\n\n");
 
