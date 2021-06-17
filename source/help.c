@@ -4,6 +4,8 @@
 void print_usage(int argc, char **argv)
 {
 	fprintf(stdout, "*** HexDiff v0.1.2 ***\n");
+	fprintf(stdout, "GitHub.com/ShortCipher\n\n");
+
 	fprintf(stdout, "Usage: %s file1 file2 [options]\n", argv[0]);
 	fprintf(stdout, "Shows two columns of hexadecimal values of two different files.\n\n");
 
@@ -36,5 +38,5 @@ void print_usage(int argc, char **argv)
 	fprintf(stdout, "\n");
 
 	fprintf(stdout, "Source code available at https://github.com/ShortCipher/HexDiff\n");
-	fprintf(stdout, "(Originally forked from https://github.com/uroboro/Hexdiff)\n\n");
+	fprintf(stdout, "(Originally forked from: https://github.com/uroboro/Hexdiff)\n\n");
 }
