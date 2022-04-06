@@ -3,9 +3,9 @@ HexDiff
 
 CLI tool for viewing differences between two similar files.
 
-
 Overview
 --------
+
 The default interface is two columns of hexadecimal values; one for each file,
 with the starting offset of each line.
 
@@ -16,14 +16,13 @@ and saving a range of differences to a new file.
 
 HexDiff supports multiple ranges for bytes and differences.
 
-
 Building (OS X / Linux)
 -----------------------
 
 	$ ./build.sh
 
-
 To Do
 -----
+
 - Use a structure to pass data around instead of numerous args?
 - Find a workaround for global variables.
