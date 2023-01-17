@@ -24,6 +24,7 @@ Building (OS X / Linux)
 To Do
 -----
 
+- Inform users when files are identical.
 - Add option to *only* display diff lines.
 - Use a structure to pass data around instead of numerous args?
 - Find a workaround for global variables.
